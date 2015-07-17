@@ -1,6 +1,6 @@
-		<div id='footer'>
-			
-		</div>
+<?php wp_footer(); ?>
+	<div id='footer'>
+		<p>Copyright &copy; Online QCL</p>	
 	</div>
 </body>
 
@@ -12,9 +12,11 @@
 <script>
 	var editor = ace.edit("incodeArea");
 	editor.setTheme("ace/theme/monokai");
+	editor.session.setUseWrapMode(true);
 	
 	editor = ace.edit("outcodeArea");
 	editor.setTheme("ace/theme/monokai");
+	editor.session.setUseWrapMode(true);
 	editor.setReadOnly(true);
 	editor.renderer.setShowGutter(false); 
 	editor.renderer.setScrollMargin(20, 20, 20, 20);
