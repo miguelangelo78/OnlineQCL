@@ -1,0 +1,5 @@
+// Your code here
+qureg q[1];
+H(q);
+list q;
+dump q;

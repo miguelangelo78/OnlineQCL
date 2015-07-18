@@ -10,17 +10,19 @@
 <script src="<?php bloginfo('template_url'); ?>/js/aceeditor/ace.js" type="text/javascript" charset="utf-8"></script>
 <script src='<?php bloginfo('template_url'); ?>/js/main.js'></script>
 <script>
-	var editor = ace.edit("incodeArea");
-	editor.setTheme("ace/theme/monokai");
-	editor.session.setUseWrapMode(true);
+	var inputCode = ace.edit("incodeArea");
+	inputCode.setTheme("ace/theme/monokai");
+	inputCode.getSession().setMode("ace/mode/c_cpp");
+	inputCode.session.setUseWrapMode(true);
 	
-	editor = ace.edit("outcodeArea");
-	editor.setTheme("ace/theme/monokai");
-	editor.session.setUseWrapMode(true);
-	editor.setReadOnly(true);
-	editor.renderer.setShowGutter(false); 
-	editor.renderer.setScrollMargin(20, 20, 20, 20);
-	editor.renderer.setPadding(20);
+	var outCode = ace.edit("outcodeArea");
+	outCode.setTheme("ace/theme/monokai");
+	outCode.getSession().setMode("ace/mode/c_cpp");
+	outCode.session.setUseWrapMode(true);
+	outCode.setReadOnly(true);
+	outCode.renderer.setShowGutter(false); 
+	outCode.renderer.setScrollMargin(20, 20, 20, 20);
+	outCode.renderer.setPadding(20);
 </script>
 
 </html>

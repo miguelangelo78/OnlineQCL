@@ -14,7 +14,11 @@
 			
 			<div class='row'>
 				<div class='col-md-offset-1 col-md-4'>
-					<div id='incodeArea'>Your code here</div>
+					<div id='incodeArea'>// Your code here
+qureg a[1];
+H(a);
+print a;
+dump a;</div>
 					<br>
 					<button id='runBtn' type='button' class='btn btn-sm btn-success'>Run</button>
 				</div>

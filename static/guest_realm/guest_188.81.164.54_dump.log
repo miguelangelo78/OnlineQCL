@@ -1,0 +1,5 @@
+QCL Quantum Computation Language (32 qubits, seed 1437220947)
+: global q = <0>
+qureg q[1];
+: SPECTRUM q: <0>
+0.5 |0>, 0.5 |1>
