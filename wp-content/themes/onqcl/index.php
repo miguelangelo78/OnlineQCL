@@ -9,8 +9,8 @@
 	</div>
 	
 	<div id='testWrapper' class='jumbotron'>
-		<div class='container'>
-			<h3 class='text-center'>Give it a try!</h3>
+		<div id='codeContainer' class='container'>
+			<h3 id='giveitatry' class='text-center'>Give it a try!</h3>
 			
 			<div class='row'>
 				<div class='col-md-offset-1 col-md-4'>

@@ -101,12 +101,16 @@ body{
     user-select: none;
 }
 
-#testwrapper{
+#testWrapper{
 	box-shadow: inset 0px 5px 5px #BDBBBB;
-	padding-top: 5px;
 	background: #DBDBDB;
 	color: #383D42;
-	margin: 0px;
+	margin: 0px !important;
+}
+
+#giveitatry {
+	margin-top: -10px;
+	padding: -10px;
 }
 
 #signTron{
