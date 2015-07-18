@@ -12,6 +12,7 @@ function handle_parallax(){
 
 $(function(){
 	initialAnimations();
+
 	handle_parallax();
 	
 });
