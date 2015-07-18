@@ -13,6 +13,7 @@ class QCL {
 	}
 	
 	public function execute($code, $is_guest){
+		
 		$this->write_prog($code, $is_guest);
 		
 		chdir($this->LIB_DIR);
