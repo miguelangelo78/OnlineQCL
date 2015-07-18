@@ -18,8 +18,8 @@
 	</style>
 	
 	<div class='container'>
-		<div id='page_container' class='text-center jumbotron post page'>
-			<h2><?php the_title(); ?></h2>
+		<div id='page_container' class='jumbotron post page'>
+			<h2 class='text-center'><?php the_title(); ?></h2>
 			<div class='center-block' id='titleBrk'></div>
 			<?php the_content(); ?>
 		</div>

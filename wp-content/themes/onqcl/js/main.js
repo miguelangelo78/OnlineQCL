@@ -30,6 +30,7 @@ $(function(){
 	
 	$("#runBtn").click(function(){
 		try{
+			outCode.setValue("Running QCL code . . .", 1);
 			var json = {"code" : inputCode.getValue()};
 			ajax(function(data){
 				var data_json = JSON.parse(data);

@@ -114,15 +114,29 @@ body{
 }
 
 #signTron{
+	cursor: pointer;
 	background: #253E66;
 	color: white;
 	margin: 0;
+	transition: background 0.5s ease;
+}
+
+#signTron:hover{
+	background: #345891;
+	transition: background 0.5s ease;
 }
 
 #moreTron{
+	cursor: pointer;
 	color: white;
 	background: #C29D4E;
 	margin: 0;
+	transition: background 0.5s ease;
+}
+
+#moreTron:hover {
+	background: #DBB25A;
+	transition: background 0.5s ease;
 }
 
 #exampleTron{
@@ -169,4 +183,8 @@ body{
 #pageContainer{
 	background: white;
 	margin: 0;
+}
+
+pre {
+	color: #C7254E !important;
 }

@@ -4,11 +4,11 @@
 		exit;
 	}
 ?>
+
 <?php get_header(); 
-	if(have_posts())
-		while(have_posts()){ the_post(); ?>
+	?>
 	
-	<style>
+		<style>
 		#nav:hover{
 			box-shadow: 0px 5px 5px #999999;
 			
@@ -56,7 +56,20 @@
 			margin: 10px 0px -20px 0px;
 			width: 500px;
 		}
+		
+		#recoverPassTitle {
+			font-size: 1.5em;
+		}
+		
+		#wppb-recover-password > form > p {
+			font-size: 1em;
+		}
 	</style>
+	
+	<?php 
+	
+	if(have_posts())
+		while(have_posts()){ the_post(); ?>
 	
 	<div id='loginContainer' class='container'>
 		<div class='jumbotron'>
@@ -67,18 +80,18 @@
 				</div>
 			</div>
 			<div clasS='row'>
-				<div class='col-md-offset-4 col-md-4'>
+				<div class='col-md-offset-3 col-md-4'>
 					<div id='loginContent'><?php the_content(); ?></div>
 				</div>
 			</div>
 		</div>
 	</div>
-
+	<hr>
 	
 <?php }else echo "<p>No content found :/</p>"; get_footer();?>
 
 	<script>
 	$(function(){
-		$("#wppb-submit").addClass("btn btn-primary");
+		$("#wppb-submit, #wppb-recover-password-button").addClass("btn btn-primary");
 	});
 	</script>
